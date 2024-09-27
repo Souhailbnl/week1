@@ -43,8 +43,14 @@ switch(keuze){
        break;
 
        case '4':
-       resultaat = getal1 / getal2;
-       console.log("Het resultaat van de bewerking is: " + resultaat);
+        if(getal1 == 1 || getal2 == 0){
+           
+            console.log("Je mag niet delen door 0")
+        }
+        else{
+            resultaat = getal1 / getal2;
+            console.log("Het resultaat van de bewerking is: " + resultaat);
+        } 
        break;
 
        default:
