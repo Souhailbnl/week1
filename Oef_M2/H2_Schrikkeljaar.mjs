@@ -5,7 +5,7 @@ const userInput = readline.createInterface({input, output});
 
 let jaartal = await userInput.question('Geef een jaartal:');
 
-if(jaartal % 400 == 0 || (jaartal % 4 == 0 && jaartal % 100!= 0))
+if(jaartal % 400 == 0 || (jaartal % 4 == 0 && jaartal % 100 != 0))
     {
 
         console.log("Het jaartal " + jaartal + " " + "telt 29 dagen in de maand februari")
